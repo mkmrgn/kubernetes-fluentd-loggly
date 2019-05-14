@@ -60,7 +60,7 @@ spec:
         effect: NoSchedule
       containers:
       - name: fluentd-loggly
-        image: garland/kubernetes-fluentd-loggly:1.0
+        image: logglyeng/kubernetes-fluentd-loggly:latest
         command:
           - '/bin/sh'
           - '-c'
