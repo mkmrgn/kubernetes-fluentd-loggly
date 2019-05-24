@@ -60,14 +60,14 @@ spec:
         effect: NoSchedule
       containers:
       - name: fluentd-loggly
-        image: logglyeng/kubernetes-fluentd-loggly:latest
+        image: logglyeng/kubernetes-fluentd-loggly-bulk:latest
         command:
           - '/bin/sh'
           - '-c'
           - '/usr/sbin/td-agent 2>&1 >> /var/log/fluentd.log'
         env:
           - name: LOGGLY_URL
-            value: "https://logs-01.loggly.com/inputs/YOUR_LOGGLY_TOKEN_HERE/tag/k8s"
+            value: "https://logs-01.loggly.com/bulk/YOUR_LOGGLY_TOKEN_HERE/tag/k8s"
         resources:
           limits:
             memory: 200Mi
