@@ -22,7 +22,7 @@ apt-get install -y -q --no-install-recommends \
   curl ca-certificates make g++ sudo bash
 
 # Install Fluentd.
-/usr/bin/curl -sSL https://toolbelt.treasuredata.com/sh/install-ubuntu-xenial-td-agent2.sh | sh
+/usr/bin/curl -sSL https://toolbelt.treasuredata.com/sh/install-ubuntu-xenial-td-agent3.sh | sh
 
 # Change the default user and group to root.
 # Needed to allow access to /var/log/docker/... files.
